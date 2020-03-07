@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/back_main_simple"
+    tools:context=".PostActivity">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:minHeight="?attr/actionBarSize"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#10000000"
+        app:titleTextColor="@android:color/white"
+        app:titleTextAppearance="@style/Toolbar.TitleText">
+    </android.support.v7.widget.Toolbar>
+    <TextView
+        android:id="@+id/text12241"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#324F99" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9"
+        android:background="@drawable/layout_profile"
+        android:orientation="vertical">
+       <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="5"
+            android:layout_marginTop="10dp"
+           android:layout_marginLeft="10dp"
+           android:layout_marginRight="10dp"
+            android:background="@android:color/white">
+
+            <ImageView
+                android:id="@+id/image_View"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/white"
+                android:onClick="onPickImage"
+                app:srcCompat="@drawable/ic_image_add" />
+        </FrameLayout >
+        <EditText
+            android:id="@+id/editCategoryName"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Enter category name"
+            android:layout_margin="10dp"
+            android:padding="5dp"
+            android:layout_toEndOf="@+id/textView12"
+            android:textColor="@color/colorProduct"
+            android:textSize="20dp"
+            android:textAlignment="center"
+            android:background="@drawable/layout_back" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/btnCancel"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@color/colorCancel"
+                android:textColor="@color/colorWhite"
+                android:textSize="15dp"
+                android:text="Cancel" />
+            <Button
+                android:id="@+id/btnAdd"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:background="@color/colorOk"
+                android:textColor="@color/colorWhite"
+                android:textSize="15dp"
+                android:text="Add" />
+        </LinearLayout>
+
+        <!--</ScrollView>-->
+    </LinearLayout>
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#20000000"
+        app:itemTextColor="@color/colorIron"
+        app:itemIconTint="@color/colorIron"
+        app:labelVisibilityMode="selected"
+        app:menu="@menu/navigation" />
+</LinearLayout>

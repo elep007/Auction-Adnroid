@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/ic_home"
+        android:title="@string/title_home" />
+
+    <item
+        android:id="@+id/navigation_purchase"
+        android:icon="@drawable/ic_user"
+        android:title="Purchase" />
+
+    <item
+        android:id="@+id/navigation_winner"
+        android:icon="@drawable/ic_winner"
+        android:title="Won Bids" />
+
+    <item
+        android:id="@+id/navigation_contact"
+        android:icon="@drawable/ic_call"
+        android:title="Contact" />
+
+</menu>
